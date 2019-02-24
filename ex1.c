@@ -35,8 +35,6 @@ int my_compare_strings(char string1[], char string2[]) {
     return 0;
 }
 
-//string 1 -> string 2
-//string 2 -> string 1
 void my_swap_strings(char string1[], char string2[]) {
   char temp;    // char variable used in swapping one character at a time
 
@@ -47,12 +45,6 @@ void my_swap_strings(char string1[], char string2[]) {
      for the string terminators.
   */
     for (int i = 0; i < LEN; i++) {
-        //if(strlen(string2) > i) {
-        //    temp = string2[i];
-        //}
-        //if(strlen(string1) > i) {
-        //    string2[i] = string1[i];
-        //}
         temp = string2[i];
         string2[i] = string1[i];
         string1[i] = temp;
@@ -63,7 +55,6 @@ void my_swap_strings(char string1[], char string2[]) {
 int main()
 {
   char Strings[NUM][LEN];
-
   printf("Please enter %d strings, one per line:\n", NUM);
 
   /* Write a for loop here to read NUM strings.
@@ -99,7 +90,6 @@ int main()
     }
 
   /* Output sorted list */
-
   puts("\nIn alphabetical order, the strings are:");     
   /* Write a for loop here to print all the strings. Feel free to use puts/printf
      etc. for printing each string.
